@@ -18,24 +18,24 @@ Tokens can represent virtually anything in Ethereum:
 - and more...
 
 Such a powerful feature of Ethereum must be handled by a robust standard, right? That's exactly
-where the ERC-20 plays its role! This standard allows developers to build token applications that are interoperable with other products and services. The ERC-20 standard is also used to provide additional functionality to [ether](/glossary/#ether).
+where ERC-20 plays its role! This standard allows developers to build token applications that are interoperable with other products and services. The ERC-20 standard is also used to provide additional functionality to [ether](/glossary/#ether).
 
 **What is ERC-20?**
 
-The ERC-20 introduces a standard for Fungible Tokens, in other words, they have a property that makes each Token be exactly
-the same (in type and value) as another Token. For example, an ERC-20 Token acts just like the ETH, meaning that 1 Token
-is and will always be equal to all the other Tokens.
+ERC-20 introduces a standard for fungible tokens, in other words, they have a property that makes each token be exactly
+the same (in type and value) as another token. For example, an ERC-20 token acts just like ETH, meaning that 1 token
+is and will always be equal to all the other tokens.
 
 ## Prerequisites {#prerequisites}
 
 - [Accounts](/developers/docs/accounts)
-- [Smart Contracts](/developers/docs/smart-contracts/)
+- [Smart contracts](/developers/docs/smart-contracts/)
 - [Token standards](/developers/docs/standards/tokens/)
 
 ## Body {#body}
 
-The ERC-20 (Ethereum Request for Comments 20), proposed by Fabian Vogelsteller in November 2015, is a Token Standard that
-implements an API for tokens within Smart Contracts.
+ERC-20 (Ethereum Request for Comments 20), proposed by Fabian Vogelsteller in November 2015, is a token standard that
+implements an API for tokens within smart contracts.
 
 Example functionalities ERC-20 provides:
 
@@ -44,7 +44,7 @@ Example functionalities ERC-20 provides:
 - get the total supply of the token available on the network
 - approve whether an amount of token from an account can be spent by a third-party account
 
-If a Smart Contract implements the following methods and events it can be called an ERC-20 Token Contract and, once deployed, it
+If a smart contract implements the following methods and events it can be called an ERC-20 token contract and, once deployed, it
 will be responsible to keep track of the created tokens on Ethereum.
 
 From [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
@@ -72,8 +72,8 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Examples {#web3py-example}
 
-Let's see how a Standard is so important to make things simple for us to inspect any ERC-20 Token Contract on Ethereum.
-We just need the Contract Application Binary Interface (ABI) to create an interface to any ERC-20 Token. As you can
+Let's see how a standard is so important to make things simple for us to inspect any ERC-20 token contract on Ethereum.
+We just need the contract Application Binary Interface (ABI) to create an interface to any ERC-20 token. As you can
 see below we will use a simplified ABI, to make it a low friction example.
 
 #### Web3.py Example {#web3py-example}
